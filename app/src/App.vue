@@ -10,12 +10,12 @@
       ></sort-price>
     </div>
     <div class="row row-cols-4">
-      <one-cart 
+      <one-card 
         v-for="(item, index) in showProduct" 
         :key="index"
         :one-product="item"
         @get-count-product='postCountProduct'>
-        </one-cart>
+        </one-card>
     
     </div>
   
@@ -28,7 +28,7 @@
 
 <script>
 import VHeader from './components/VHeader.vue'
-import OneCart from './components/OneCart.vue'
+import OneCard from './components/OneCard.vue'
 import  SortPrice  from './components/SortPrice.vue'
 
 let url = './json/product.json';
@@ -36,7 +36,7 @@ export default {
   name: 'App',
   components: {
     VHeader,
-    OneCart,
+    OneCard,
     SortPrice
     
     

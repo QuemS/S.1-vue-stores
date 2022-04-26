@@ -50,7 +50,7 @@
 
 <script>
 export default {
-    name:'OneCart',
+    name:'OneCard',
     data() {
         return {
             count: 1,
